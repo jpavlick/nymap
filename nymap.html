@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <style>
+    #map {
+      width: 600px;
+      height: 500px;
+    }
+   </style>
+  </head>
+  <body>
+   <div id="map"></div>
+   <script>
+     function initMap() {
+       var data={"type": "FeatureCollection",
+                 "features": [
+                   { "type": "Feature",
+                     "id" : 1,
+                     "geometry": {"type": "Point", "coordinates": [40.7551174, -73.9747127]}
+                   },
+                   { "type": "Feature",
+                     "id": 2,
+                     "geometry": {"type": "Point", "coordinates":[40.707104,-73.933081]}
+                   }
+                ]
+              };
+       var mapDiv = document.getElementById('map');
+       var map = new google.maps.Map(mapDiv, {
+         center: {lat: 40.710, lng: -74.010},
+         zoom: 10
+        });
+
+       map.data.loadGeoJson('https://raw.githubusercontent.com/dwillis/nyc-maps/master/boroughs.geojson');
+      }
+   </script>
+   <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+      async defer></script>
+  </body>
+</html>
+
