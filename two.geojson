@@ -7,7 +7,7 @@
         },
       { "type": "Feature",
         "id": 2,
-        "geometry": {"type": "Point", "coordinates":[40.707104,-73.933081]},
+        "geometry": {"type": "Point", "coordinates":[-73.933081, 40.707104]},
         "properties": {"name":"Avra Cadabra"}
        }
   ]
