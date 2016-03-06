@@ -2,7 +2,7 @@
     "features": [
       { "type": "Feature",
         "id" : 1,
-        "geometry": {"type": "Point", "coordinates": [40.7551174, -73.9747127]},
+        "geometry": {"type": "Point", "coordinates": [-40.7551174, 73.9747127]},
         "properties":{"name":"El Cortez"}
         },
       { "type": "Feature",
